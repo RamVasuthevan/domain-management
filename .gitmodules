@@ -1,0 +1,3 @@
+[submodule "domains/tools/viz-js/viz-js"]
+	path = domains/tools/viz-js/viz-js
+	url = https://github.com/mdaines/viz-js.git
