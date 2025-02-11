@@ -77,3 +77,8 @@ input[type="password"] {
 .hidden {
   display: none;
 }
+
+#warningText {
+  color: red;
+  font-weight: bold;
+}
