@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voice Interface</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>Voice Interface</h1>
+<p>
+  A minimum viable proof of concept of a tool to help with natural language writing workflows.
+</p>
+<p id="warningText">ARE YOU REALLY GOING TO ENTER YOUR OPENAI API KEY ON SOME RANDOM GUY's WEBSITE!?</p>
+<div id="controls">
+  <label for="openaiKey"><strong>OpenAI API Key:</strong></label>
+  <input
+    type="password"
+    id="openaiKey"
+    placeholder="Enter your API key (sk-...)"
+  />
+
+  <br><br>
+
+  <button id="toggleBtn">Start Recording</button>
+  <button id="doubleToggleBtn">Double Toggle</button>
+  <span id="recordingTimer">00:00</span>
+  <input type="checkbox" id="autoCopyCheckbox" checked>
+  <label for="autoCopyCheckbox">
+    Automatically copy all transcripts after each result
+  </label>
+
+  <button id="copyAllBtn">Copy All</button>
+</div>
+
+<p><strong>Keyboard Shortcuts:</strong> Press [Enter] to toggle on/off. Press [Space] to stop current recording and start a new one if running, or just start if not recording.</p>
+
+<div id="transcripts">
+  <p><em>Your transcriptions will appear below...</em></p>
+</div>
+
+<div class="error hidden" id="errorDisplay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

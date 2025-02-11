@@ -1,0 +1,84 @@
+body {
+  font-family: sans-serif;
+  margin: 2rem;
+  background: #f9f9f9;
+}
+label,
+button,
+input {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+}
+input[type="password"] {
+  padding: 0.4rem;
+  width: 300px;
+}
+#controls {
+  margin-bottom: 1rem;
+}
+#toggleBtn {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+#copyAllBtn {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+#recordingTimer {
+  font-size: 1rem;
+  margin-left: 0.75rem;
+  color: #333;
+}
+#autoCopyCheckbox {
+  margin-left: 1rem;
+}
+#transcripts {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  min-height: 4rem;
+  margin-top: 1rem;
+}
+.transcript-entry {
+  position: relative;
+  background: #eee;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-left: 4px solid #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transcript-text {
+  white-space: pre-wrap;
+  flex: 1 1 auto;
+  margin-right: 1rem;
+}
+.entry-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex: 0 0 auto;
+}
+.copyBtn,
+.retryBtn {
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+.spinner {
+  margin-left: 0.5rem;
+}
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+.hidden {
+  display: none;
+}
+
+#warningText {
+  color: red;
+  font-weight: bold;
+}
